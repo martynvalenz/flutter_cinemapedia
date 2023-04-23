@@ -15,9 +15,9 @@ class MovieMapper {
     overview: movie.overview,
     popularity: movie.popularity,
     posterPath: movie.posterPath == '' ? 
-      'no-poster'
+      'https://viterbi-web.usc.edu/~zexunyao/itp301/Assignment_07/img.jpeg'
       : 'https://image.tmdb.org/t/p/w500${movie.posterPath}',
-    releaseDate: movie.releaseDate,
+    releaseDate: movie.releaseDate != null ? movie.releaseDate! : DateTime.now() ,
     title: movie.title,
     video: movie.video,
     voteAverage: movie.voteAverage,
@@ -36,7 +36,7 @@ class MovieMapper {
     overview: movie.overview,
     popularity: movie.popularity,
     posterPath: movie.posterPath == '' ? 
-      'no-poster'
+      'https://viterbi-web.usc.edu/~zexunyao/itp301/Assignment_07/img.jpeg'
       : 'https://image.tmdb.org/t/p/w500${movie.posterPath}',
     releaseDate: movie.releaseDate,
     title: movie.title,
