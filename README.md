@@ -20,3 +20,8 @@
 11. Go to `Presentation -> Screens -> custom screen` and use the provider in the state widget, change widget to `ConsumerStatefulWidget` or `ConsumerWidget`
 12. Add the provider in the `initState` function with the `ref.read` function
 13. Add the provider in the `build` function with the `ref.watch` function
+
+## Cambios en la entidad, hay que ejecutar el comando
+```
+flutter pub run build_runner build
+```
