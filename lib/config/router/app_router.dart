@@ -11,7 +11,7 @@ final appRouter = GoRouter(
       name: HomeScreen.name,
       builder: (context, state){
         final pageIndex = int.parse(state.params['page'] ?? '0');
-        if(pageIndex > 2 || pageIndex < 0) context.go('/home/0');
+        if(pageIndex > 3 || pageIndex < 0) context.go('/home/0');
         return HomeScreen(pageIndex:pageIndex);
       },
       routes:[
